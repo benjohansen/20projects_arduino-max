@@ -13,7 +13,8 @@ void loop()
   {
     while(Serial.available() > 0) {   // as long as there is data in the serial buffer ...
       maxData = Serial.read();        // ... read the data
-    }
+    
     if(maxData == 1)digitalWrite(ledPin, HIGH);   // turn led on if Max sent a 1
     if(maxData == 0)digitalWrite(ledPin, LOW);    // turn led off if Max sent a 0
+    }
   }
