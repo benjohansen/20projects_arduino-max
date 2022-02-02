@@ -26,8 +26,6 @@ void loop() {
        bstate = 0;
       }
 
-    Serial.print(bstate);
-    Serial.print(F(" ")); // doesn't waste RAM on this string that will be the same all the time anyway
+    Serial.print(bstate); //this will send an ASCII code to Max, so it will send 48 for 0 and 49 for 1
 
-    Serial.println();  // Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n').
 }

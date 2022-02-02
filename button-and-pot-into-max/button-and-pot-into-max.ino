@@ -33,10 +33,11 @@ void loop() {
 
 
     Serial.print(sensorValue); // print the results to the serial monitor
-    Serial.print(F(" "));
-    Serial.print(bstate, 2);
+    Serial.print(F(" "));      // put a space between what you are sending so we can extract each from a list in Max; F() doesn't waste RAM on this string that will be the same all the time anyway
+    Serial.print(bstate);   // was Serial.print(bstate, 2); so testing if removing the 2 is ok
     Serial.print(F(" "));
 
-    Serial.println();
+    Serial.println();  // Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n').
+
 
 }
