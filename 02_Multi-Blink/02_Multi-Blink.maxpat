@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 83.0, 169.0, 782.0, 697.0 ],
+		"rect" : [ 83.0, 169.0, 653.0, 419.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,46 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"linecount" : 8,
+					"id" : "obj-17",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 129.5, 359.0, 150.0, 114.0 ],
-					"text" : "make sure you change your port letter to be the right USB port for your Digital Sandbox by pressing the \"print\" message above and seeing what port letter is correct in the max console"
+					"patching_rect" : [ 91.0, 188.0, 215.0, 20.0 ],
+					"text" : "convert ASCII characters to integers"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 82.5, 143.0, 328.0, 20.0 ],
+					"text" : "send the list to atoi then bang atoi to send integers out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 134.0, 101.5, 238.0, 20.0 ],
+					"text" : "output a list when an element changes"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 444.0, 49.0, 167.0, 154.0 ],
+					"text" : "1. plug in Arduino to the computer via USB\n2. press the print message going into the serial object\n3. view the Max Console to find what letter is given to the port that uses the USB connected to your Arduino ... change serial object to read correct input letter\n4. click the toggle buttons"
 				}
 
 			}
@@ -56,31 +89,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 56.0, 202.526062000000024, 269.0, 20.0 ],
+					"patching_rect" : [ 112.0, 231.0, 269.0, 20.0 ],
 					"text" : "add a line feed character ('/n' in Arduino code)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 10.0, 150.0, 20.0 ],
-					"text" : "arduino code:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"linecount" : 48,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 34.0, 420.0, 650.0 ],
-					"text" : "// this is to control the 5 LEDs in a row on the Sparkfun Digital Sandbox\n\nint d04Val = 0;\nint d05Val = 0;\nint d06Val = 0;\nint d07Val = 0;\nint d08Val = 0;\n\nconst int d04Pin = 4;\nconst int d05Pin = 5;\nconst int d06Pin = 6;\nconst int d07Pin = 7;\nconst int d08Pin = 8;\n\nvoid setup() {\n\nSerial.begin(9600);\n\npinMode(d04Pin, OUTPUT);\npinMode(d05Pin, OUTPUT);\npinMode(d06Pin, OUTPUT);\npinMode(d07Pin, OUTPUT);\npinMode(d08Pin, OUTPUT);\n\n}\n\nvoid loop() {\n  \n  while (Serial.available() > 0) {\n\n  d04Val = Serial.parseInt();\n  d05Val = Serial.parseInt();\n  d06Val = Serial.parseInt();\n  d07Val = Serial.parseInt();\n  d08Val = Serial.parseInt();\n\n  if (Serial.read() == '\\n') {\n\n  digitalWrite(d04Pin, d04Val);\n  digitalWrite(d05Pin, d05Val);\n  digitalWrite(d06Pin, d06Val);\n  digitalWrite(d07Pin, d07Val);\n  digitalWrite(d08Pin, d08Val);\n  \n      \n      }\n  }\n}"
 				}
 
 			}
@@ -91,7 +101,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 49.0, 109.0, 29.5, 22.0 ],
+					"patching_rect" : [ 45.0, 143.0, 29.5, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -103,7 +113,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 177.0, 65.0, 22.0 ],
+					"patching_rect" : [ 45.0, 231.0, 65.0, 22.0 ],
 					"text" : "append 10"
 				}
 
@@ -116,7 +126,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 189.0, 21.0, 24.0, 24.0 ]
+					"patching_rect" : [ 178.0, 49.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -128,7 +138,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 149.0, 21.0, 24.0, 24.0 ]
+					"patching_rect" : [ 145.0, 49.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -140,7 +150,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 113.0, 23.0, 24.0, 24.0 ]
+					"patching_rect" : [ 112.0, 49.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -152,7 +162,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 78.0, 23.0, 24.0, 24.0 ]
+					"patching_rect" : [ 79.0, 49.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -164,7 +174,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 22.0, 24.0, 24.0 ]
+					"patching_rect" : [ 45.0, 49.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -175,7 +185,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 75.0, 78.0, 22.0 ],
+					"patching_rect" : [ 45.0, 107.0, 78.0, 22.0 ],
 					"text" : "pak 0 0 0 0 0"
 				}
 
@@ -187,7 +197,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 49.0, 141.0, 40.0, 22.0 ],
+					"patching_rect" : [ 45.0, 188.0, 40.0, 22.0 ],
 					"text" : "atoi"
 				}
 
@@ -199,7 +209,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.0, 302.0, 32.0, 22.0 ],
+					"patching_rect" : [ 141.0, 288.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -211,7 +221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 45.0, 414.0, 77.0, 22.0 ],
+					"patching_rect" : [ 45.0, 343.0, 77.0, 22.0 ],
 					"text" : "serial d 9600"
 				}
 

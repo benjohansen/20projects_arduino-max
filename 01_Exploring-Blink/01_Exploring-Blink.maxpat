@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 767.0, 298.0, 640.0, 480.0 ],
+		"rect" : [ 767.0, 298.0, 360.0, 361.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 50.0, 170.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 76.0, 74.0, 24.0, 24.0 ]
+					"patching_rect" : [ 50.0, 56.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -57,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 80.0, 119.0, 69.0, 22.0 ],
+					"patching_rect" : [ 50.0, 108.0, 69.0, 22.0 ],
 					"text" : "metro 1000"
 				}
 
@@ -65,13 +77,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"linecount" : 5,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 207.0, 205.0, 167.0, 74.0 ],
-					"presentation_linecount" : 5,
-					"text" : "1. plug in Arduino\n2. press print\n3. change serial object to read correct input letter\n4. "
+					"patching_rect" : [ 150.0, 56.0, 167.0, 154.0 ],
+					"text" : "1. plug in Arduino to the computer via USB\n2. press print\n3. view the Max Console to find what letter is given to the port that uses the USB connected to your Arduino ... change serial object to read correct input letter\n4. turn on the metro object using the top toggle button"
 				}
 
 			}
@@ -82,32 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 205.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 50.0, 205.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 314.0, 34.0, 22.0 ],
+					"patching_rect" : [ 95.0, 170.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -121,7 +107,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 50.0, 256.0, 77.0, 22.0 ],
+					"patching_rect" : [ 50.0, 221.0, 77.0, 22.0 ],
 					"text" : "serial d 9600"
 				}
 
@@ -129,22 +115,8 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-15", 0 ]
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -157,7 +129,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
