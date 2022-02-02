@@ -40,13 +40,99 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "number",
+					"id" : "obj-7",
+					"maxclass" : "slider",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 414.0, 487.0, 50.0, 22.0 ]
+					"patching_rect" : [ 103.25, 699.0, 198.0, 33.0 ],
+					"size" : 1023.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 646.0, 522.0, 311.0, 100.0 ],
+					"text" : "because the state of the button is being sent as often as we are polling the serial object above (every 33ms), this is a way to know only when the button state changes\n\n(note: you could easily filter this data in the Arduino instead by only sending the button state when the button state changes)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 255.25, 352.0, 140.75, 20.0 ],
+					"text" : "group into an ascii list"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 240.75, 471.0, 190.0, 20.0 ],
+					"text" : "turn it into numbers/messages"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 220.25, 407.5, 242.0, 33.0 ],
+					"text" : "convert integers (ascii code) into symbols (characters us humans are used to seeing)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.0,
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 182.0, 244.0, 46.0, 37.0 ],
+					"text" : "until LF"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-37",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 220.25, 205.0, 87.0, 37.0 ],
+					"text" : "group characters"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 319.0, 190.0, 322.0, 154.0 ],
+					"text" : "Because Serial.println(); in the Arduino code adds a CR and LF to the end of what it prints to serialm, we know a group (or list) is complete when we recieve either one.\n\nWe still need to have both in the [select] object so it does not output either of then along with list coming out of the right output.\n\n\nCR or carriage return character (ASCII 13, dec 13, or '\\r')\nLF or line feed character (ASCII 10, dec 10, or '\\n')"
 				}
 
 			}
@@ -58,7 +144,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 168.0, 548.0, 50.0, 22.0 ]
+					"patching_rect" : [ 168.0, 613.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -68,7 +154,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.0, 582.0, 50.0, 20.0 ],
+					"patching_rect" : [ 168.0, 647.0, 50.0, 20.0 ],
 					"text" : "pot"
 				}
 
@@ -80,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 168.0, 482.0, 67.0, 22.0 ],
+					"patching_rect" : [ 168.0, 547.0, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
 				}
 
@@ -173,76 +259,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 406.5, 530.0, 65.0, 20.0 ],
+					"patching_rect" : [ 484.5, 562.0, 65.0, 20.0 ],
 					"text" : "button"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 319.0, 58.75, 20.0 ],
-					"text" : "ascii list"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 119.0, 255.0, 53.0, 20.0 ],
-					"text" : "until LF"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 229.75, 443.0, 150.0, 33.0 ],
-					"text" : "integer from symbol (combine into one value)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 379.0, 150.0, 20.0 ],
-					"text" : "symbol of ascii code"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 214.0, 227.5, 100.0, 20.0 ],
-					"text" : "group characters"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 229.75, 165.0, 253.0, 47.0 ],
-					"text" : "ascii values\ncarriage return character (ASCII 13, or '\\r')\nnewline character (ASCII 10, or '\\n')"
 				}
 
 			}
@@ -265,8 +283,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 12.75, 454.0, 203.0, 22.0 ],
-					"text" : "679 0"
+					"patching_rect" : [ 12.75, 519.0, 203.0, 22.0 ],
+					"text" : "548 0"
 				}
 
 			}
@@ -277,8 +295,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.75, 379.0, 197.0, 22.0 ],
-					"text" : "\"679 0 \""
+					"patching_rect" : [ 15.75, 444.0, 197.0, 22.0 ],
+					"text" : "\"548 0\""
 				}
 
 			}
@@ -289,8 +307,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.75, 318.0, 142.0, 22.0 ],
-					"text" : "54 55 57 32 48 32"
+					"patching_rect" : [ 15.75, 383.0, 142.0, 22.0 ],
+					"text" : "53 52 56 32 48"
 				}
 
 			}
@@ -313,7 +331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.75, 406.0, 73.0, 22.0 ],
+					"patching_rect" : [ 165.75, 471.0, 73.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -325,7 +343,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 165.75, 348.0, 40.0, 22.0 ],
+					"patching_rect" : [ 165.75, 413.0, 40.0, 22.0 ],
 					"text" : "itoa"
 				}
 
@@ -337,7 +355,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 165.75, 287.0, 83.0, 22.0 ],
+					"patching_rect" : [ 165.75, 352.0, 83.0, 22.0 ],
 					"text" : "zl group 1000"
 				}
 
@@ -456,7 +474,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-13", 0 ]
+					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -469,6 +487,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -476,8 +501,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-2", 1 ]
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -492,13 +517,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-22", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-29", 0 ]
 				}
 
 			}
