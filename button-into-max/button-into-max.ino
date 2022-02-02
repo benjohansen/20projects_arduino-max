@@ -27,7 +27,7 @@ void loop() {
       }
 
     Serial.print(bstate);
-    Serial.print(F(" "));
+    Serial.print(F(" ")); // doesn't waste RAM on this string that will be the same all the time anyway
 
-    Serial.println();
+    Serial.println();  // Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n').
 }
