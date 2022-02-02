@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 522.0, 803.0 ],
+		"rect" : [ 139.0, 82.0, 753.0, 862.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,35 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 391.0, 588.0, 311.0, 47.0 ],
+					"text" : "because the state of the button is being sent as often as we are polling the serial object above (every 33ms), this is a way to know only when the button state changes"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 165.75, 588.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 391.0, 745.0, 47.0, 20.0 ],
+					"patching_rect" : [ 391.0, 821.0, 47.0, 20.0 ],
 					"text" : "lift up"
 				}
 
@@ -55,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 278.0, 745.0, 76.0, 20.0 ],
+					"patching_rect" : [ 278.0, 821.0, 76.0, 20.0 ],
 					"text" : "push down"
 				}
 
@@ -68,7 +92,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 397.25, 710.0, 24.0, 24.0 ]
+					"patching_rect" : [ 397.25, 786.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -80,7 +104,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 293.0, 710.0, 24.0, 24.0 ]
+					"patching_rect" : [ 293.0, 786.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -91,7 +115,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 338.0, 635.0, 60.0, 22.0 ],
+					"patching_rect" : [ 338.0, 711.0, 60.0, 22.0 ],
 					"text" : "select 1 0"
 				}
 
@@ -103,7 +127,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 338.0, 523.0, 48.0, 22.0 ],
+					"patching_rect" : [ 338.0, 599.0, 48.0, 22.0 ],
 					"text" : "change"
 				}
 
@@ -116,20 +140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 338.0, 589.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-8",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 165.75, 523.0, 50.0, 22.0 ]
+					"patching_rect" : [ 338.0, 665.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -139,8 +150,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.75, 558.0, 150.0, 20.0 ],
-					"text" : "button"
+					"patching_rect" : [ 92.75, 623.0, 210.0, 20.0 ],
+					"text" : "button pushed (1) or not pushed (0)"
 				}
 
 			}
@@ -150,18 +161,21 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 319.0, 58.75, 20.0 ],
-					"text" : "ascii list"
+					"patching_rect" : [ 257.25, 363.0, 140.75, 20.0 ],
+					"text" : "group into an ascii list"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.0,
 					"id" : "obj-27",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.0, 255.0, 53.0, 20.0 ],
+					"patching_rect" : [ 186.75, 229.0, 56.0, 37.0 ],
 					"text" : "until LF"
 				}
 
@@ -169,33 +183,35 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-32",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.75, 443.0, 150.0, 33.0 ],
-					"text" : "integer from symbol (combine into one value)"
+					"patching_rect" : [ 248.0, 482.0, 190.0, 20.0 ],
+					"text" : "turn it into numbers/messages"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 379.0, 150.0, 20.0 ],
-					"text" : "symbol of ascii code"
+					"patching_rect" : [ 214.75, 418.5, 242.0, 33.0 ],
+					"text" : "convert integers (ascii code) into symbols (characters us humans are used to seeing)"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
 					"id" : "obj-28",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 214.0, 227.5, 100.0, 20.0 ],
+					"patching_rect" : [ 225.0, 190.0, 87.0, 37.0 ],
 					"text" : "group characters"
 				}
 
@@ -203,12 +219,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 3,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.75, 165.0, 253.0, 47.0 ],
-					"text" : "ascii values\ncarriage return character (ASCII 13, or '\\r')\nnewline character (ASCII 10, or '\\n')"
+					"patching_rect" : [ 323.75, 175.0, 322.0, 154.0 ],
+					"text" : "Because Serial.println(); in the Arduino code adds a CR and LF to the end of what it prints to serialm, we know a group (or list) is complete when we recieve either one.\n\nWe still need to have both in the [select] object so it does not output either of then along with list coming out of the right output.\n\n\nCR or carriage return character (ASCII 13, dec 13, or '\\r')\nLF or line feed character (ASCII 10, dec 10, or '\\n')"
 				}
 
 			}
@@ -231,7 +247,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 12.75, 454.0, 203.0, 22.0 ],
+					"patching_rect" : [ 12.75, 530.0, 203.0, 22.0 ],
 					"text" : "0"
 				}
 
@@ -243,7 +259,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.75, 379.0, 197.0, 22.0 ],
+					"patching_rect" : [ 15.75, 455.0, 197.0, 22.0 ],
 					"text" : "\"0 \""
 				}
 
@@ -255,7 +271,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.75, 318.0, 142.0, 22.0 ],
+					"patching_rect" : [ 15.75, 394.0, 142.0, 22.0 ],
 					"text" : "48 32"
 				}
 
@@ -267,8 +283,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 165.75, 190.0, 59.0, 22.0 ],
-					"text" : "sel 13 10"
+					"patching_rect" : [ 165.75, 175.0, 73.0, 22.0 ],
+					"text" : "select 13 10"
 				}
 
 			}
@@ -279,7 +295,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.75, 406.0, 73.0, 22.0 ],
+					"patching_rect" : [ 165.75, 482.0, 73.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -291,7 +307,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 165.75, 348.0, 40.0, 22.0 ],
+					"patching_rect" : [ 165.75, 424.0, 40.0, 22.0 ],
 					"text" : "itoa"
 				}
 
@@ -303,7 +319,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 165.75, 287.0, 83.0, 22.0 ],
+					"patching_rect" : [ 165.75, 363.0, 83.0, 22.0 ],
 					"text" : "zl group 1000"
 				}
 
@@ -352,7 +368,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 165.75, 116.0, 77.0, 22.0 ],
-					"text" : "serial d 9600"
+					"text" : "serial c 9600"
 				}
 
 			}
@@ -406,7 +422,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -422,7 +438,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-13", 0 ]
+					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -478,7 +494,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-8", 0 ]
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}

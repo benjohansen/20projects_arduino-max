@@ -1,5 +1,5 @@
 
-const int buttonPin = 16;     // the number of the pushbutton pin
+const int buttonPin = 12;     // the number of the pushbutton pin on the Sparkfun Digital Sandbox
 int buttonState = 0;         // variable for reading the pushbutton status
 
 
