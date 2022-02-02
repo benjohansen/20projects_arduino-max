@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 300.0, 219.0, 539.0, 590.0 ],
+		"rect" : [ 585.0, 151.0, 539.0, 590.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 86.0, 322.0, 253.0, 47.0 ],
+					"text" : "ascii values\ncarriage return character (ASCII 13, or '\\r')\nnewline character (ASCII 10, or '\\n')"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "message",
@@ -172,12 +184,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-42",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 235.526061999999996, 115.0, 33.0 ],
-					"text" : "format for serial, turn ascii to integer"
+					"patching_rect" : [ 26.0, 230.026061999999996, 115.0, 20.0 ],
+					"text" : "turn ascii to integer"
 				}
 
 			}
@@ -189,7 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 223.0, 235.526061999999996, 120.0, 33.0 ],
-					"text" : "colour LED should be going"
+					"text" : "colour the RGB LED should be showing"
 				}
 
 			}
@@ -229,17 +240,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 51.0, 150.0, 65.0, 22.0 ],
-					"text" : "s theBang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
@@ -253,7 +253,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 0.0,
-					"bgcolor" : [ 0.058823529411765, 0.835294117647059, 0.0 ],
+					"bgcolor" : [ 0.592156862745098, 0.568627450980392, 0.756862745098039 ],
 					"border" : 1,
 					"id" : "obj-34",
 					"maxclass" : "panel",
@@ -288,7 +288,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 177.500763000000006, 132.824127000000004, 127.0, 22.0 ],
-					"text" : "15 213 0"
+					"text" : "151 145 193"
 				}
 
 			}
@@ -411,17 +411,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 41.5, 187.763031000000012, 23.914550999999999, 187.763031000000012 ],
-					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 

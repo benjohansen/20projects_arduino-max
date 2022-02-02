@@ -77,12 +77,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"linecount" : 11,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 56.0, 167.0, 154.0 ],
-					"text" : "1. plug in Arduino to the computer via USB\n2. press print\n3. view the Max Console to find what letter is given to the port that uses the USB connected to your Arduino ... change serial object to read correct input letter\n4. turn on the metro object using the top toggle button"
+					"patching_rect" : [ 150.0, 56.0, 167.0, 167.0 ],
+					"text" : "1. plug in Arduino to the computer via USB\n2. press the print message going into the serial object\n3. view the Max Console to find what letter is given to the port that uses the USB connected to your Arduino ... change serial object to read correct input letter\n4. turn on the metro object using the top toggle button"
 				}
 
 			}

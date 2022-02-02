@@ -55,7 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 101.5, 238.0, 20.0 ],
+					"patching_rect" : [ 127.5, 107.0, 238.0, 20.0 ],
 					"text" : "output a list when an element changes"
 				}
 
