@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 121.0, 172.0, 470.0, 708.0 ],
+		"rect" : [ 121.0, 172.0, 454.0, 334.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 12,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 249.0, 24.0, 167.0, 167.0 ],
+					"text" : "1. plug in Arduino to the computer via USB\n2. press the print message going into the serial object\n3. view the Max Console to find what letter is given to the port that uses the USB connected to your Arduino ... change serial object to read correct input letter\n4. turn on the metro object using the top toggle button"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 43.0, 295.0, 50.0, 22.0 ]
+					"patching_rect" : [ 43.0, 189.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -58,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 43.0, 213.0, 24.0, 24.0 ]
+					"patching_rect" : [ 43.0, 107.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -69,7 +81,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 43.0, 255.0, 92.0, 22.0 ],
+					"patching_rect" : [ 43.0, 149.0, 92.0, 22.0 ],
 					"text" : "counter 2 0 255"
 				}
 
@@ -81,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 43.0, 107.0, 56.0, 22.0 ],
+					"patching_rect" : [ 43.0, 67.0, 56.0, 22.0 ],
 					"text" : "metro 10"
 				}
 
@@ -94,19 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 43.0, 68.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 131.5, 516.0, 283.0, 60.0 ],
-					"text" : "make sure you change your port letter to be the right USB port for your Digital Sandbox by pressing the \"print\" message above and seeing what port letter is correct in the max console"
+					"patching_rect" : [ 43.0, 28.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -117,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.0, 423.0, 32.0, 22.0 ],
+					"patching_rect" : [ 165.0, 189.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -129,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 42.0, 535.0, 77.0, 22.0 ],
+					"patching_rect" : [ 43.0, 256.0, 77.0, 22.0 ],
 					"text" : "serial d 9600"
 				}
 

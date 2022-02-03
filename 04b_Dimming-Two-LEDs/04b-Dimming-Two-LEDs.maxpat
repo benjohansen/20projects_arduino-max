@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 12,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 276.0, 61.0, 167.0, 167.0 ],
+					"text" : "1. plug in Arduino to the computer via USB\n2. press the print message going into the serial object\n3. view the Max Console to find what letter is given to the port that uses the USB connected to your Arduino ... change serial object to read correct input letter\n4. turn on the metro object using the top toggle button"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -129,7 +141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 131.5, 516.0, 281.0, 60.0 ],
+					"patching_rect" : [ 131.5, 516.0, 283.0, 60.0 ],
 					"text" : "make sure you change your port letter to be the right USB port for your Digital Sandbox by pressing the \"print\" message above and seeing what port letter is correct in the max console"
 				}
 
@@ -142,18 +154,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 123.5, 371.0, 269.0, 20.0 ],
 					"text" : "add a line feed character ('/n' in Arduino code)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 43.0, 302.0, 29.5, 22.0 ],
-					"text" : "t b l"
 				}
 
 			}
@@ -248,20 +248,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 2 ],
-					"source" : [ "obj-20", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -297,7 +283,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 

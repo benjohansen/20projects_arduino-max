@@ -18,5 +18,5 @@ void loop() {
 
   Serial.println(sensorValue); // print the results to the serial monitor
   
-  delay(10); // wait 10 ms before the next loop for the ADC to settle after the last reading
+  //delay(10); // wait 10 ms before the next loop for the ADC to settle after the last reading
 }
