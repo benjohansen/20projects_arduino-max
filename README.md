@@ -8,23 +8,23 @@ These examples use Max (by [Cycling'74](https://cycling74.com)) and the [Arduino
 
 Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion) are named the same as Sparkfun's tutorials. Links are provided to my adaptation and to Sparkfun's tutorials.
 
-- Digital Sandbox (DS) to Max
-  - 1digital_from-Arduino-to-Max
-    - send the state of a button from the Digital Sandbox to Max
-  - 1analog_from-Arduino-to-Max: see "[10_Do-the-Analog-Slide](/10_Do-the-Analog-Slide)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
-  - 1digital-and-1analog_from-Arduino-to-Max
-    - send the states of a button and a potentiometer from the Digital Sandbox to Max
+### Digital Sandbox (DS) to Max
+  - 1D_from-DS-to-Max
+    - send the state of a button (digital pin) from the Digital Sandbox to Max
+  - 1A_from-DS-to-Max: see "[10_Do-the-Analog-Slide](/10_Do-the-Analog-Slide)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
+  - 1D-and-1A_from-DS-to-Max
+    - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
 
-- Max to Arduino
-  - 1digital_from-Max-to-Arduino: see "[01_Exploring-Blink](/01_Exploring-Blink)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink))
-  - 5digital_from-Max-to-Arduino: see "[02_Multi-Blink](/02_Multi-Blink)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink))
-  - 1analog_from-Max-to-Arduino: see "[04_Dimming_one-LED](/04_Dimming_one-LED)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
-  - 2analog_from-Max-to-Arduino: see "[04_Dimming_two-LEDs](04_Dimming_two-LEDs)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
-  - 3analog_from-Max-to-Arduino: see "05_Color-Mixing" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing))
+### Max to Digital Sandbox (DS)
+  - 1D_from-Max-to-DS: see "[01_Exploring-Blink](/01_Exploring-Blink)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink))
+  - 5D_from-Max-to-DS: see "[02_Multi-Blink](/02_Multi-Blink)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink))
+  - 1A_from-Max-to-DS: see "[04_Dimming_one-LED](/04_Dimming_one-LED)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
+  - 2A_from-Max-to-DS: see "[04_Dimming_two-LEDs](04_Dimming_two-LEDs)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
+  - 3A_from-Max-to-DS: see "05_Color-Mixing" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing))
 
-- Both Directions: Max to Arduino and Arduino to Max
-  - 1analog-from-Arduiono-to-Max_3analog-from-Max-to-Arduino
-    - send the state of the potentiometer from the Digital Sandbox to Max, and control the Digital Sandbox's RGB LED from Max
+### Sending both directions: Max to DS and simultaneously DS to Max
+  - 1A-from-DS-to-Max_and_3A-from-Max-to-DS
+    - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control the Digital Sandbox's RGB LED from Max
 
 
 # About the Sparkfun Digital Sandbox
