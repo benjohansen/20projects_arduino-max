@@ -18,7 +18,7 @@ Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](ht
 
 - Max to Arduino
   - 1digital_from-Max-to-Arduino
-    - see "01_Exploring-Blink" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink))
+    - see "[01_Exploring-Blink](/tree/main/01_Exploring-Blink)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink))
   - 5digital_from-Max-to-Arduino
     - see "02_Multi-Blink" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink))
   - 1analog_from-Max-to-Arduino
