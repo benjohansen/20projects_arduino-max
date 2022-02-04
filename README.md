@@ -1,5 +1,3 @@
-# max-arduino
-
 This is a work in progress (beginning Feb.2022).
 
 # Purpose
