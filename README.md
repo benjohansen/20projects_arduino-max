@@ -12,7 +12,7 @@ Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](ht
   - 1digital_from-Arduino-to-Max
     - send the state of a button from the Digital Sandbox to Max
   - 1analog_from-Arduino-to-Max
-    - see "10_Do-the-Analog-Slide" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
+    - see "[10_Do-the-Analog-Slide](/10_Do-the-Analog-Slide)" ([Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
   - 1digital-and-1analog_from-Arduino-to-Max
     - send the states of a button and a potentiometer from the Digital Sandbox to Max
 
