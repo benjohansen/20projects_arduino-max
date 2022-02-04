@@ -2,41 +2,31 @@ This is a work in progress (beginning Feb.2022).
 
 # Purpose
 
-To provide clear examples of how to communicate between Max and an Arduino (microcontroller).
+Provide clear examples of how to communicate between Max and an Arduino (microcontroller) using the serial port.
 
-These examples use Max (by [Cycling'74](https://cycling74.com)) and the Digital Sandbox (by [Sparkfun](https://www.sparkfun.com/products/12651)). The Digital Sandbox is an [Arduino](https://www.arduino.cc) with real-world inputs and outputs attached.
+These examples use Max (by [Cycling'74](https://cycling74.com)) and the [Arduino](https://www.arduino.cc) based Digital Sandbox (by [Sparkfun](https://www.sparkfun.com/products/12651)) that has real-world inputs and outputs built into one board.
 
-There are a few parts to this collection:
-
-Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion):
-- 01_Exploring-Blink
-- 02_Multi-Blink
-- 04_Dimming_one-LED
-- 04_Dimming_two-LEDs
-- 05_Color-Mixing
-- 10_Do-the-Analog-Slide
-
-Patches/Sketches created to better understand serial communication between the Arduino and Max:
+Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion) are named the same as Sparkfun's tutorials. Links are provided to my adaptation and to Sparkfun's tutorials.
 
 - Digital Sandbox (DS) to Max
   - 1digital_from-Arduino-to-Max
     - send the state of a button from the Digital Sandbox to Max
   - 1analog_from-Arduino-to-Max
-    - see "10_Do-the-Analog-Slide"
+    - see "10_Do-the-Analog-Slide" (link to Sparkfun's tutorial)
   - 1digital-and-1analog_from-Arduino-to-Max
     - send the states of a button and a potentiometer from the Digital Sandbox to Max
 
 - Max to Arduino
   - 1digital_from-Max-to-Arduino
-    - see "01_Exploring-Blink"
+    - see "01_Exploring-Blink" (link to Sparkfun's tutorial)
   - 5digital_from-Max-to-Arduino
-    - see "02_Multi-Blink"
+    - see "02_Multi-Blink" (link to Sparkfun's tutorial)
   - 1analog_from-Max-to-Arduino
-    - see "04_Dimming_one-LED"
+    - see "04_Dimming_one-LED" (link to Sparkfun's tutorial)
   - 2analog_from-Max-to-Arduino
-    - see "04_Dimming_two-LEDs"
+    - see "04_Dimming_two-LEDs" (link to Sparkfun's tutorial)
   - 3analog_from-Max-to-Arduino
-    - see "05_Color-Mixing"
+    - see "05_Color-Mixing" (link to Sparkfun's tutorial)
 
 - Both Directions: Max to Arduino and Arduino to Max
   - 1analog-from-Arduiono-to-Max_3analog-from-Max-to-Arduino
@@ -44,6 +34,8 @@ Patches/Sketches created to better understand serial communication between the A
 
 
 # About the Sparkfun Digital Sandbox
+
+[Link to the Sparkfun Digital Sandbox product page](https://www.sparkfun.com/products/12651)
 
 ![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
 
