@@ -32,6 +32,8 @@ Patches/Sketches created to better understand serial communication between the A
 
 # About the Sparkfun Digital Sandbox
 
+![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
+
 ### Microcontroller chip
 - [ATMEGA328P](https://www.microchip.com/en-us/product/ATmega328P) (32kB of flash program memory and 2kB of internal SRAM) - the Sparkfun Digital Sandbox has an 8MHz clock speed
 
