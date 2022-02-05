@@ -12,16 +12,19 @@ Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](ht
   - [1D_from-DS-to-Max](/1D_from-DS-to-Max)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
     - nearly the same as [Arduino's Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial) built-in example (I use serial.print() rather than serial.println() and added some comments)
-  - 1A_from-DS-to-Max: see "[10_Do-the-Analog-Slide](/10_Do-the-Analog-Slide)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
+  - [1A_from-DS-to-Max](/1A_from-DS-to-Max)
     - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
+    - based on Sparkfun's "[10_Do-the-Analog-Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" tutorial
     - similar to [Arduino's Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial)
   - 1D-and-1A_from-DS-to-Max
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
 
 ### Max to Digital Sandbox (DS)
-  - 1D_from-Max-to-DS: see "[01_Exploring-Blink](/01_Exploring-Blink)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink))
+  - [1D_from-Max-to-DS](/1D_from-Max-to-DS)
+    - based on Sparkfun's "[01_Exploring-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" tutorial
     - similar to [Arduino's Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink) built-in example
-  - 5D_from-Max-to-DS: see "[02_Multi-Blink](/02_Multi-Blink)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink))
+  - 5D_from-Max-to-DS
+    - based on Sparkfun's "[02_Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" tutorial
   - 1A_from-Max-to-DS: see "[04_Dimming_one-LED](/04_Dimming_one-LED)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
     - similar to [Arduino's Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
   - 2A_from-Max-to-DS: see "[04_Dimming_two-LEDs](04_Dimming_two-LEDs)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
