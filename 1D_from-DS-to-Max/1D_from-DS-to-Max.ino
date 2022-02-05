@@ -20,7 +20,7 @@ void loop() {
     //declare a local variable (which can only be used within this function or block of code) and read the state of button
     int buttonState = digitalRead(buttonPin); // it will read LOW or HIGH
 
-    Serial.print(buttonState); //this will "print" (or send) an ASCII code to Max
+    Serial.print(buttonState); // "print" (or send) an ASCII code to Max
     // so it will send 48 for 0 and 49 for 1 (note: LOW and HIGH are constant variables in Arduino code that equal 0 and 1)
 
     delay(1);  // delay in between reads for stability (may not be necessary)

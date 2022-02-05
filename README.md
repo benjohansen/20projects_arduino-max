@@ -2,7 +2,7 @@ This is a work in progress (beginning Feb.2022).
 
 # Purpose
 
-Provide clear examples of how to communicate between Max and an Arduino (microcontroller) using the serial port.
+Provide clear, heavily example sketches/patches of how to communicate between Max and an Arduino (microcontroller) using the serial port.
 
 These examples use Max (by [Cycling'74](https://cycling74.com)) and the [Arduino](https://www.arduino.cc) based Digital Sandbox (by [Sparkfun](https://www.sparkfun.com/products/12651)) that has real-world inputs and outputs built into one board.
 
@@ -13,6 +13,8 @@ Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](ht
     - send the state of a button (digital pin) from the Digital Sandbox to Max
     - nearly the same as [Arduino's Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial) built-in example (I use serial.print() rather than serial.println() and added some comments)
   - 1A_from-DS-to-Max: see "[10_Do-the-Analog-Slide](/10_Do-the-Analog-Slide)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
+    - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
+    - similar to [Arduino's Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial)
   - 1D-and-1A_from-DS-to-Max
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
 
