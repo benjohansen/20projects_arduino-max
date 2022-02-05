@@ -9,8 +9,9 @@ These examples use Max (by [Cycling'74](https://cycling74.com)) and the [Arduino
 Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion) are named the same as Sparkfun's tutorials. Links are provided to my adaptation and to Sparkfun's tutorials.
 
 ### Digital Sandbox (DS) to Max
-  - 1D_from-DS-to-Max
+  - [1D_from-DS-to-Max](/1D_from-DS-to-Max)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
+    - nearly the same as [Arduino's Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial) built-in example (I use serial.print() rather than serial.println() and added some comments)
   - 1A_from-DS-to-Max: see "[10_Do-the-Analog-Slide](/10_Do-the-Analog-Slide)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide))
   - 1D-and-1A_from-DS-to-Max
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max

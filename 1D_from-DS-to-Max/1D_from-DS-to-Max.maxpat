@@ -47,7 +47,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 185.25, 282.0, 152.0, 51.0 ],
-					"presentation_linecount" : 3,
 					"text" : "or just work with the ASCII values (48 = 0 and 49 = 1)"
 				}
 

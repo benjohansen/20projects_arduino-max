@@ -1,14 +1,15 @@
 
+//the "const" variable qualifier means the value of these variables will not change (they are "read only")
+const int redPin = 9;
+const int greenPin = 10;
+const int bluePin = 11;
 
 //variables to store RGB values
 int redVal = 0;
 int greenVal = 0;
 int blueVal = 0;
 
-//constants (i.e. they won't change) to store LED RGB pins
-const int redPin = 9;
-const int greenPin = 10;
-const int bluePin = 11;
+
 
 
 void setup() {
