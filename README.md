@@ -20,8 +20,10 @@ Patches/Sketches created to match the [Sparkfun tutorials written by jimblom](ht
 
 ### Max to Digital Sandbox (DS)
   - 1D_from-Max-to-DS: see "[01_Exploring-Blink](/01_Exploring-Blink)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink))
+    - similar to [Arduino's Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink) built-in example
   - 5D_from-Max-to-DS: see "[02_Multi-Blink](/02_Multi-Blink)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink))
   - 1A_from-Max-to-DS: see "[04_Dimming_one-LED](/04_Dimming_one-LED)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
+    - similar to [Arduino's Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
   - 2A_from-Max-to-DS: see "[04_Dimming_two-LEDs](04_Dimming_two-LEDs)" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way))
   - 3A_from-Max-to-DS: see "05_Color-Mixing" (and here's [Sparkfun's tutorial](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing))
 
