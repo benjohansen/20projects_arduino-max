@@ -9,7 +9,9 @@ void setup() {
 
 void loop() {
 
-  //declare a local variable (which can only be used within this function or block of code) and read the state of the the Sparkfun Digital Sandbox slide potentiometer on analog pin 3
+  // declare a local variable (which can only be used within this function or block of code) 
+  // and read the state of the the Sparkfun Digital Sandbox slide potentiometer on analog pin 3
+  // change A3 to whatever analog pin you want to read on the Digital Sandbox (such as A1 for the light sensor)
   int sensorValue = analogRead(A3);  // it will scale the voltage read as value between 0-1023
 
   Serial.println(sensorValue); // "print" (or send) to Max an ASCII code for the sensorValue plus ASCII value 13 and 10 for CR and LF
