@@ -47,8 +47,6 @@ Title names:<br/>
 
 [Link to the Sparkfun Digital Sandbox product page](https://www.sparkfun.com/products/12651)
 
-![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
-
 ### Microcontroller chip
 - [ATMEGA328P](https://www.microchip.com/en-us/product/ATmega328P) (32kB of flash program memory and 2kB of internal SRAM) - the Sparkfun Digital Sandbox has an 8MHz clock speed
 
@@ -65,6 +63,8 @@ Title names:<br/>
 - RGB LED on D9 (red), D10 (green), and D11 (blue) pins
 - 3-pin add-on header with VCC (5V), GND, and pin D3
 - 4-pin header with 3.3V, GND, A4 (SDA) pin, and A5 (SDL) pin
+
+![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
 
 # other great resources
 - [Sparkfun Digital Sandbox interactive simulation by Bitsbox](http://sparkfun.codepops.com/)
