@@ -8,6 +8,8 @@ These examples use Max (by [Cycling'74](https://cycling74.com)) and the [Arduino
 
 I initially set out to create patches/sketches to match the [Sparkfun tutorials written by jimblom](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion) and organically decided to expand to support an understanding of communication between Max and an Arduino. Links to each example's inspiration are listed below.
 
+# Table of Contents
+
 Title names:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;"D" for digital<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;"A" for analog<br/>
