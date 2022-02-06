@@ -42,6 +42,7 @@ Title names:<br/>
   - [1A-from-DS-to-Max_and_3A-from-Max-to-DS](/1A-from-DS-to-Max_and_3A-from-Max-to-DS)
     - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control the Digital Sandbox's RGB LED from Max
 
+<hr>
 
 # About the Sparkfun Digital Sandbox
 
