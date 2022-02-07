@@ -1,6 +1,6 @@
-
-//no need to create a const variable for the analog pin used and no need to use pinMode() because when calling analogRead(), it reconfigures the Analog Pin for “input"
-
+// when calling analogRead(), it reconfigures the Analog Pin for “input"
+//    so, no need to run pinMod()
+//    so, no need to create a const variable for the analog pin used
 
 void setup() {
   Serial.begin(9600); // initialize serial communications at 9600 bps

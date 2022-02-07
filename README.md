@@ -2,15 +2,15 @@ This is a work in progress (beginning Feb.2022).
 
 # Purpose
 
-Provide clear, heavily example sketches/patches of how to communicate between Max and an Arduino (microcontroller) using the serial port.
+Provide clear, thoroughly commented code to show how to use serial communication between Max (by [Cycling'74](https://cycling74.com)) and an [Arduino](https://www.arduino.cc) microcontroller.
 
-These examples use Max (by [Cycling'74](https://cycling74.com)) and the [Arduino](https://www.arduino.cc) based Digital Sandbox (by [Sparkfun](https://www.sparkfun.com/products/12651)) that has real-world inputs and outputs built into one board.
+These examples specifically use Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... but, with a little physical computing and a very small amount of code editing, any Arduino will work.
 
-I initially set out to create patches/sketches to match the [Sparkfun tutorials written by jimblom](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion) and organically decided to expand to support an understanding of communication between Max and an Arduino. Links to each example's inspiration are listed below.
+I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
 
 # Table of Contents
 
-Example titles' naming convention:<br/>
+Naming convention:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;number = number of ins or outs<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;D = digital<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;A = analog<br/>
@@ -19,28 +19,31 @@ Example titles' naming convention:<br/>
 ### Digital Sandbox (DS) to Max
   - [1D-in-DS-to-Max](/1D-in-DS-to-Max)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
-    - nearly the same as Arduino's [Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial) built-in example (I use serial.print() rather than serial.println() and added some comments)
+    - nearly the same as Arduino's "[Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial)" built-in example (I use serial.print() rather than serial.println() and added some comments)
   - [1A-in-DS-to-Max](/1A-in-DS-to-Max)
     - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
-    - based on Sparkfun's "[10. Do the Analog Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" tutorial
-    - similar to Arduino's [Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial) built-in example
+    - based on Sparkfun's "[10. Do the Analog Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" experiment
+    - similar to Arduino's "[Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial)" built-in example
   - [1D-and-1A-in-DS-to-Max](/1D-and-1A-in-DS-to-Max)
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
 
 ### Max to Digital Sandbox (DS)
 
   - [Max-to-DS-out-1D](/Max-to-DS-out-1D)
-    - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" tutorial
-    - similar to Arduino's [Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink) built-in example
+    - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment
+    - similar to Arduino's "[Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink)" built-in example
   - [Max-to-DS-out-5D](/Max-to-DS-out-5D)
-    - based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" tutorial
+    - based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" experiment
   - [Max-to-DS-out-1A](/Max-to-DS-out-1A)
-    - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" tutorial
+    - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
     - similar to Arduino's [Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
   - [Max-to-DS-out-2A](/Max-to-DS-out-2A)
-    - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" tutorial
+    - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
   - [Max-to-DS-out-3A](/Max-to-DS-out-3A)
-    - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" tutorial
+    - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
+    - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
+
+
 
 ### Sending both directions: Max to DS and simultaneously DS to Max
 
