@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1121.0, 817.0 ],
+		"rect" : [ 59.0, 104.0, 969.0, 879.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,80 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 168.0, 605.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 19.0, 354.0, 114.0 ],
+					"presentation_linecount" : 8,
+					"text" : "0. upload Arduino code to Sparkfun Digital Sandbox (DS)\n1. plug in DS to computer USB\n2. press print\n3. change the Max serial object to have the correct port letter based on what you see in the Max Console\n4. start the metro object by clicking the toggle button to \"X\"\n5. move slider potentiometer on DS\n6. press button on DS"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.0,
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 188.5, 266.0, 46.25, 37.0 ],
+					"presentation_linecount" : 2,
+					"text" : "until LF"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 209.75, 220.0, 87.0, 37.0 ],
+					"presentation_linecount" : 2,
+					"text" : "group characters"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.5, 196.0, 360.0, 141.0 ],
+					"presentation_linecount" : 10,
+					"text" : "Because Serial.println(); in the Arduino code adds a CR and LF to the end of what it prints to serial, we know a group (or list) is complete when we recieve either one.\n\nWe still need to have both in the [select] object so it does not output either of then along with list coming out of the right output.\n\n\nCR = carriage return character (ASCII 13, dec 13, or '\\r')\nLF = line feed character (ASCII 10, dec 10, or '\\n')"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "slider",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 103.25, 699.0, 198.0, 33.0 ],
+					"patching_rect" : [ 102.25, 758.0, 198.0, 33.0 ],
 					"size" : 1023.0
 				}
 
@@ -58,7 +125,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.0, 522.0, 311.0, 100.0 ],
+					"patching_rect" : [ 481.0, 605.0, 312.0, 100.0 ],
 					"text" : "because the state of the button is being sent as often as we are polling the serial object above (every 33ms), this is a way to know only when the button state changes\n\n(note: you could easily filter this data in the Arduino instead by only sending the button state when the button state changes)"
 				}
 
@@ -99,52 +166,13 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"bubblepoint" : 0.0,
-					"id" : "obj-34",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 182.0, 244.0, 46.0, 37.0 ],
-					"text" : "until LF"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-37",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 220.25, 205.0, 87.0, 37.0 ],
-					"text" : "group characters"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"linecount" : 11,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 319.0, 190.0, 322.0, 154.0 ],
-					"text" : "Because Serial.println(); in the Arduino code adds a CR and LF to the end of what it prints to serialm, we know a group (or list) is complete when we recieve either one.\n\nWe still need to have both in the [select] object so it does not output either of then along with list coming out of the right output.\n\n\nCR or carriage return character (ASCII 13, dec 13, or '\\r')\nLF or line feed character (ASCII 10, dec 10, or '\\n')"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 168.0, 613.0, 50.0, 22.0 ]
+					"patching_rect" : [ 168.0, 681.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -154,8 +182,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.0, 647.0, 50.0, 20.0 ],
-					"text" : "pot"
+					"patching_rect" : [ 224.75, 681.0, 92.0, 20.0 ],
+					"text" : "potemtiometer"
 				}
 
 			}
@@ -166,7 +194,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 168.0, 547.0, 67.0, 22.0 ],
+					"patching_rect" : [ 168.0, 563.0, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
 				}
 
@@ -177,7 +205,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.0, 752.0, 47.0, 20.0 ],
+					"patching_rect" : [ 470.75, 794.0, 47.0, 20.0 ],
 					"text" : "lift up"
 				}
 
@@ -188,7 +216,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 533.0, 752.0, 76.0, 20.0 ],
+					"patching_rect" : [ 382.25, 794.0, 76.0, 20.0 ],
 					"text" : "push down"
 				}
 
@@ -201,7 +229,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 652.25, 717.0, 24.0, 24.0 ]
+					"patching_rect" : [ 476.0, 767.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -213,7 +241,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 548.0, 717.0, 24.0, 24.0 ]
+					"patching_rect" : [ 401.25, 767.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -224,7 +252,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 593.0, 642.0, 60.0, 22.0 ],
+					"patching_rect" : [ 428.0, 725.0, 60.0, 22.0 ],
 					"text" : "select 1 0"
 				}
 
@@ -236,7 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 593.0, 530.0, 48.0, 22.0 ],
+					"patching_rect" : [ 428.0, 605.0, 48.0, 22.0 ],
 					"text" : "change"
 				}
 
@@ -249,7 +277,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 593.0, 596.0, 24.0, 24.0 ]
+					"patching_rect" : [ 428.0, 679.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -259,20 +287,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 484.5, 562.0, 65.0, 20.0 ],
+					"patching_rect" : [ 376.5, 681.0, 44.5, 20.0 ],
 					"text" : "button"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 299.0, 19.0, 167.0, 100.0 ],
-					"text" : "1. plug in Arduino\n2. press print\n3. change serial object to read correct input letter\n4. start metro\n5. turn on audio processing\n5. move slider on Arduino"
 				}
 
 			}
@@ -283,8 +299,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 12.75, 519.0, 203.0, 22.0 ],
-					"text" : "548 0"
+					"patching_rect" : [ 12.75, 519.0, 145.0, 22.0 ],
+					"text" : "418 0"
 				}
 
 			}
@@ -295,8 +311,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.75, 444.0, 197.0, 22.0 ],
-					"text" : "\"548 0\""
+					"patching_rect" : [ 15.75, 444.0, 142.0, 22.0 ],
+					"text" : "\"418 0\""
 				}
 
 			}
@@ -308,7 +324,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.75, 383.0, 142.0, 22.0 ],
-					"text" : "53 52 56 32 48"
+					"text" : "52 49 56 32 48"
 				}
 
 			}
@@ -435,7 +451,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -443,7 +459,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -451,7 +467,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -459,7 +475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -494,7 +510,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -517,6 +533,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}

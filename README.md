@@ -37,18 +37,30 @@ Naming convention:<br/>
   - [Max-to-DS-out-1A](/Max-to-DS-out-1A)
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
     - similar to Arduino's [Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
+    - will work for a motor (DS Addon) by changing output pin number to 3 (similar to and simpler than Sparkfun's "[15. Serial Motoring (Addon))](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment, with just one-way communication)
   - [Max-to-DS-out-2A](/Max-to-DS-out-2A)
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
   - [Max-to-DS-out-3A](/Max-to-DS-out-3A)
     - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
     - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
+  - [Max-to-DS-out-servo](/Max-to-DS-out-servo) (servo motor)
+    - pulsed digital out (not PWM)
+    - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment
+    - make sure the "charge" switch on the Digital SandBox is in the "off" position
+  - [Max-to-DS-out-piezo](/Max-to-DS-out-piezo) (buzzer)
+    - PWM
+    - based on Sparkfun's "[14. Opto-Theremin (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/14-opto-theremin-addon)" experiment
 
 
 
 ### Sending both directions: Max to DS and simultaneously DS to Max
 
+  - 1D-in-DS-to-Max_Max-to-DS-out-1A
+    - coming soon ...
+    - PWM out
+    - based on Sparkfun's "[15. Serial Motoring (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment  
   - [1A-in-DS-to-Max_Max-to-DS-out-3A](/1A-in-DS-to-Max_Max-to-DS-out-3A)
-    - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control the Digital Sandbox's RGB LED from Max
+    - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control (from Max) the Digital Sandbox's RGB LED using PWM
 
 <hr>
 
