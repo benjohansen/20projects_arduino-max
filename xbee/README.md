@@ -17,3 +17,8 @@ Here's my current research on hooking an Xbee up to the Sparkfun Digital Sandbox
 [getting started with xbee](https://spin.atomicobject.com/2016/07/18/xbee-tutorial/)
 
 [xbee3 documentation](https://www.digi.com/resources/documentation/digidocs/pdfs/90001543.pdf)
+
+here's some more pasted from my old notes:
+- this may be HOW to do it! = https://maker.pro/arduino/tutorial/interfacing-xbee-module-with-arduino
+- https://spin.atomicobject.com/2016/07/18/xbee-tutorial/
+- https://bildr.org/2011/04/arduino-xbee-wireless/
