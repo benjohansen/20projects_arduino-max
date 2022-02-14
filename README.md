@@ -48,11 +48,11 @@ Naming convention:<br/>
     - use Max to control the color (using PWM) of the RGB LED on the Digital Sandbox
     - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
     - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
-  - [Max-to-DS-out-servo](/Max-to-DS-out-servo) (servo motor)
+  - [Max-to-DS-out-servo](/Max-to-DS-out-servo)
     - use Max to control a servo motor hooked to the Digital Sandbox (using pulsed digital out - *not* PWM)
     - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment
     - make sure the "charge" switch on the Digital SandBox is in the "off" position
-  - [Max-to-DS-out-piezo](/Max-to-DS-out-piezo) (buzzer)
+  - [Max-to-DS-out-piezo](/Max-to-DS-out-piezo)
     - use Max to control the frequency output of a buzzer hooked to the Digital Sandbox (using PWM)
     - based on Sparkfun's "[14. Opto-Theremin (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/14-opto-theremin-addon)" experiment
 
