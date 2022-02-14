@@ -30,25 +30,30 @@ Naming convention:<br/>
 ### Max to Digital Sandbox (DS)
 
   - [Max-to-DS-out-1D](/Max-to-DS-out-1D)
+    - use Max to control one LED attached to the Digital Sandbox
     - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment
     - similar to Arduino's "[Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink)" built-in example
   - [Max-to-DS-out-5D](/Max-to-DS-out-5D)
+    - use Max to control the Digital Sandbox's row of five LEDs
     - based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" experiment
   - [Max-to-DS-out-1A](/Max-to-DS-out-1A)
+    - use Max to control the dimming (using PWM) of an LED on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
     - similar to Arduino's [Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
     - will work for a motor (DS Addon) by changing output pin number to 3 (similar to and simpler than Sparkfun's "[15. Serial Motoring (Addon))](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment, with just one-way communication)
   - [Max-to-DS-out-2A](/Max-to-DS-out-2A)
+    - use Max to control the dimming (using PWM) of two LEDs on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
   - [Max-to-DS-out-3A](/Max-to-DS-out-3A)
+    - use Max to control the color (using PWM) of the RGB LED on the Digital Sandbox
     - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
     - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
   - [Max-to-DS-out-servo](/Max-to-DS-out-servo) (servo motor)
-    - pulsed digital out (not PWM)
+    - use Max to control a servo motor hooked to the Digital Sandbox (using pulsed digital out - *not* PWM)
     - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment
     - make sure the "charge" switch on the Digital SandBox is in the "off" position
   - [Max-to-DS-out-piezo](/Max-to-DS-out-piezo) (buzzer)
-    - PWM
+    - use Max to control the frequency output of a buzzer hooked to the Digital Sandbox (using PWM)
     - based on Sparkfun's "[14. Opto-Theremin (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/14-opto-theremin-addon)" experiment
 
 

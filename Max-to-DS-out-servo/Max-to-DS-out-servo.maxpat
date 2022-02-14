@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 124.0, 150.0, 60.0 ],
+					"patching_rect" : [ 122.0, 124.0, 151.0, 60.0 ],
 					"text" : "you may need to change this to something around 176 to collibrate if servo is buzzing at 180"
 				}
 
