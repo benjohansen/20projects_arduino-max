@@ -67,9 +67,9 @@ Naming convention:<br/>
   - [1A-in-DS-to-Max_Max-to-DS-out-3A](/1A-in-DS-to-Max_Max-to-DS-out-3A)
     - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control (from Max) the Digital Sandbox's RGB LED using PWM
 
-### Wireless communication using two Xbee modules
+### Wireless communication using two XBee modules
 
-  - coming soon ... I hope! (I'm researching hooking the Xbee up to the expansion port on the Digital Sandbox which houses 3.3V, GND, A4 (SDA) pin, and A5 (SDL) pin)
+  - I have concluded it isn't worth implementing wireless communication using XBees with the Sparkfun Digital Sandbox because software serial solutions are unreliable. I want these examples for my students to be stable. I tried using multiple software serial libraries with various combinations of pins 11, 12, 13, and A4 (14) and A5 (15): communication often created an incorrect/unstable output and input.
 
 <hr>
 
