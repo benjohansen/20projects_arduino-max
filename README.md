@@ -69,7 +69,7 @@ Naming convention:<br/>
 
 <hr>
 
-### Wireless communication using two XBee modules
+### Wireless communication using XBee modules
 
   - In short: I have concluded it isn't worth implementing wireless communication using XBees with the Sparkfun Digital SandBox
   - I used multiple software serial libraries with various combinations of pins 11, 12, 13, and A4 (14) and A5 (15). I got it to work ... but communication often created an incorrect/unstable output and input.
