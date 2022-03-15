@@ -1,3 +1,5 @@
-# 01_Exploring-Blink
+# Max-to-DS-out-1D
 
-This allows Max to control the LED on pin 13 by sending 0 or 1 to the Arduino by patching the output of a toggle button to the input of a serial object. A [metro] object is included to recreate the constant blinking of the LED (the "hello world" of the Arduino).
+- use Max to control one LED attached to the Digital Sandbox
+- based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment
+- similar to Arduino's "[Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink)" built-in example
