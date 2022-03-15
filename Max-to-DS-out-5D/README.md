@@ -1,3 +1,4 @@
-# 02_Multi-Blink
+# Max-to-DS-out-5D
 
-This allows Max to control the 5 LEDs (pins 4-8) by sending a list of zeros and ones to the Arduino via the serial object and using the Arduino's Serial.parseInt() function to read each integer in the list one at a time to set 5 different variables.
+- use Max to control the Digital Sandbox's row of five LEDs
+- based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" experiment
