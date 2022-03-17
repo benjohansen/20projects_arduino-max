@@ -8,7 +8,7 @@ These examples specifically use Sparkfun's Arduino based [Digital Sandbox](https
 
 I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
 
-## Requirements
+# Requirements
 
 1. [install Max](https://cycling74.com/downloads)
 2. Install FTDI (USB) Drivers = https://www.ftdichip.com/Drivers/VCP.htm
