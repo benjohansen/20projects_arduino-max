@@ -10,8 +10,11 @@ I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion]
 
 ## Requirements
 
-- [install Max](https://cycling74.com/downloads)
-- install the Arduino IDE and set it up with the Digital Sandbox definitions ([see below](https://github.com/benjohansen/max-arduino_digital-sandbox#setup)).
+1. [install Max](https://cycling74.com/downloads)
+2. Install FTDI (USB) Drivers = https://www.ftdichip.com/Drivers/VCP.htm
+![photo of the FTDI driver page](/media/ftdi-driver-page.jpeg)
+3. Install the Arduino IDE = https://www.arduino.cc/en/Main/Software
+4. Install the Digital Sandbox board definitions for the Arduino IDE = https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​
 
 # Table of Contents
 
@@ -104,12 +107,6 @@ Naming convention:<br/>
 - 4-pin header with 3.3V, GND, A4 (SDA) pin, and A5 (SDL) pin
 
 ![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
-
-### Setup
-1. Install FTDI (USB) Drivers = https://www.ftdichip.com/Drivers/VCP.htm
-![photo of the FTDI driver page](/media/ftdi-driver-page.jpeg)
-2. Install the Arduino IDE = https://www.arduino.cc/en/Main/Software
-3. Install the Digital Sandbox board definitions for the Arduino IDE = https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​
 
 # other great resources
 - [Sparkfun Digital Sandbox interactive simulation by Bitsbox](http://sparkfun.codepops.com/)
