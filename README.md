@@ -100,6 +100,12 @@ Naming convention:<br/>
 
 ![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
 
+### Setup
+1. Install FTDI (USB) Drivers = https://www.ftdichip.com/Drivers/VCP.htm
+![photo of the FTDI driver page](/media/ftdi-driver-page.png)
+2. Install the Arduino IDE = https://www.arduino.cc/en/Main/Software
+3. Install the Digital Sandbox board definitions for the Arduino IDE = https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​
+
 # other great resources
 - [Sparkfun Digital Sandbox interactive simulation by Bitsbox](http://sparkfun.codepops.com/)
 - [Luke Woodbury's Speaking to Arduino from Max MSP](https://www.dotlib.org/arduino-workshop-9)
