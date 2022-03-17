@@ -28,6 +28,7 @@ Naming convention:<br/>
   - [1D-in-DS-to-Max](/1D-in-DS-to-Max)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
     - nearly the same as Arduino's "[Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial)" built-in example (I use serial.print() rather than serial.println() and added some comments)
+    - [Proof from Arduino source code that you can use 1 or HIGH and 0 or LOW](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h#L40-L41)
   - [1A-in-DS-to-Max](/1A-in-DS-to-Max)
     - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
     - based on Sparkfun's "[10. Do the Analog Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" experiment
@@ -87,7 +88,9 @@ Naming convention:<br/>
 
 # About the Sparkfun Digital Sandbox
 
-[Link to the Sparkfun Digital Sandbox product page](https://www.sparkfun.com/products/12651)
+[Sparkfun Digital Sandbox product page](https://www.sparkfun.com/products/12651)
+
+[Sparkfun Digital Sandbox interactive simulation by Bitsbox](http://sparkfun.codepops.com/)
 
 ### Microcontroller chip
 - [ATMEGA328P](https://www.microchip.com/en-us/product/ATmega328P) (32kB of flash program memory and 2kB of internal SRAM) - the Sparkfun Digital Sandbox has an 8MHz clock speed
@@ -107,12 +110,3 @@ Naming convention:<br/>
 - 4-pin header with 3.3V, GND, A4 (SDA) pin, and A5 (SDL) pin
 
 ![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
-
-# other great resources
-- [Sparkfun Digital Sandbox interactive simulation by Bitsbox](http://sparkfun.codepops.com/)
-- [Luke Woodbury's Speaking to Arduino from Max MSP](https://www.dotlib.org/arduino-workshop-9)
-- [Lady Ada's Arduino Tutorial about serial communication](http://www.ladyada.net/learn/arduino/lesson4.html)
-- [Using The Screen Utility To View Arduino Serial Output](https://www.woolseyworkshop.com/2020/08/07/quick-tip-using-the-screen-utility-to-view-arduino-serial-output/)
-- [Proof from Arduino source code that you can use 1 or HIGH and 0 or LOW](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h#L40-L41)
-- [How ot ignore ,DS-store files in Github](https://code.likeagirl.io/how-to-get-rid-of-ds-store-and-node-modules-in-git-repositories-d37b8a391247)
-- [Using Serial.read() with Ardiuno](https://www.programmingelectronics.com/serial-read/)
