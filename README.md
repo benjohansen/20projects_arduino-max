@@ -102,7 +102,7 @@ Naming convention:<br/>
 
 ### Setup
 1. Install FTDI (USB) Drivers = https://www.ftdichip.com/Drivers/VCP.htm
-![photo of the FTDI driver page](/media/ftdi-driver-page.png)
+![photo of the FTDI driver page](/media/ftdi-driver-page.jpeg)
 2. Install the Arduino IDE = https://www.arduino.cc/en/Main/Software
 3. Install the Digital Sandbox board definitions for the Arduino IDE = https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​
 
