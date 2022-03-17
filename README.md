@@ -11,10 +11,10 @@ I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion]
 # Requirements
 
 1. [install Max](https://cycling74.com/downloads)
-2. Install FTDI (USB) Drivers = https://www.ftdichip.com/Drivers/VCP.htm
+2. [Install FTDI (USB) Drivers](https://www.ftdichip.com/Drivers/VCP.htm)
 ![photo of the FTDI driver page](/media/ftdi-driver-page.jpeg)
-3. Install the Arduino IDE = https://www.arduino.cc/en/Main/Software
-4. Install the Digital Sandbox board definitions for the Arduino IDE = https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​
+3. [Install the Arduino IDE](https://www.arduino.cc/en/Main/Software)
+4. [Install the Digital Sandbox board definitions for the Arduino IDE](https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​)
 
 # Table of Contents
 
