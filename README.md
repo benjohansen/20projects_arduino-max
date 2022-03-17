@@ -8,7 +8,10 @@ These examples specifically use Sparkfun's Arduino based [Digital Sandbox](https
 
 I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
 
-Note: you will need to [install Max](https://cycling74.com/downloads) and get setup with the Digital Sandbox ([see below](https://github.com/benjohansen/max-arduino_digital-sandbox#setup)).
+## Requirements
+
+- [install Max](https://cycling74.com/downloads)
+- install the Arduino IDE and set it up with the Digital Sandbox definitions ([see below](https://github.com/benjohansen/max-arduino_digital-sandbox#setup)).
 
 # Table of Contents
 
