@@ -14,7 +14,7 @@ I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion]
 2. [Install FTDI (USB) Drivers](https://www.ftdichip.com/Drivers/VCP.htm)
 ![photo of the FTDI driver page](/media/ftdi-driver-page.jpeg)
 3. [Install the Arduino IDE](https://www.arduino.cc/en/Main/Software)
-4. [Install the Digital Sandbox board definitions for the Arduino IDE](https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager​)
+4. to upload sketches to the Digital Sandbox within the Arduino IDE: go to the "Tools" menu, select the **Arduino Pro or Pro Mini** as the board type and **ATmega328P (3.3V, 8 MHz)** as the processor type; also be sure to choose the correct USB serial port.
 
 # Table of Contents
 
