@@ -1,4 +1,4 @@
-# Max-to-DS-out-servo
+# Max-to-Arduino_servo
 
 - use Max to control a servo motor hooked to the Digital Sandbox (using pulsed digital out - *not* PWM)
 - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment

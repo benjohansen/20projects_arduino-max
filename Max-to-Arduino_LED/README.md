@@ -1,4 +1,4 @@
-# Max-to-DS-out-1D
+# Max-to-Arduino_LED
 
 - use Max to control one LED attached to the Digital Sandbox
 - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment

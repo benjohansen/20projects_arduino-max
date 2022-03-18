@@ -18,71 +18,57 @@ I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion]
 
 # Table of Contents
 
-Naming convention:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;number = number of ins or outs<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;D = digital<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;A = analog<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;DS = Sparkfun's Digital Sandbox
-
-### Digital Sandbox (DS) to Max
-  - [1D-in-DS-to-Max](/1D-in-DS-to-Max)
+### Arduino to Max
+  - [Arduino-to-Max_button](/Arduino-to-Max_button)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
     - nearly the same as Arduino's "[Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial)" built-in example (I use serial.print() rather than serial.println() and added some comments)
     - [Proof from Arduino source code that you can use 1 or HIGH and 0 or LOW](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h#L40-L41)
-  - [1A-in-DS-to-Max](/1A-in-DS-to-Max)
+  - [Arduino-to-Max_pot](/Arduino-to-Max_pot)
     - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
     - based on Sparkfun's "[10. Do the Analog Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" experiment
     - similar to Arduino's "[Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial)" built-in example
-  - [1D-and-1A-in-DS-to-Max](/1D-and-1A-in-DS-to-Max)
+  - [Arduino-to-Max_button-and-pot](/Arduino-to-Max_button-and-pot)
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
 
-### Max to Digital Sandbox (DS)
+### Max to Arduino
 
-  - [Max-to-DS-out-1D](/Max-to-DS-out-1D)
+  - [Max-to-Arduino_LED](/Max-to-Arduino_LED)
     - use Max to control one LED attached to the Digital Sandbox
     - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment
     - similar to Arduino's "[Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink)" built-in example
-  - [Max-to-DS-out-5D](/Max-to-DS-out-5D)
+  - [Max-to-Arduino_5LEDs](/Max-to-Arduino_5LEDs)
     - use Max to control the Digital Sandbox's row of five LEDs
     - based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" experiment
-  - [Max-to-DS-out-1A](/Max-to-DS-out-1A)
+  - [Max-to-Arduino_dimLED](/Max-to-Arduino_dimLED)
     - use Max to control the dimming (using PWM) of an LED on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
     - similar to Arduino's [Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
     - will work for a motor (DS Addon) by changing output pin number to 3 (similar to and simpler than Sparkfun's "[15. Serial Motoring (Addon))](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment, with just one-way communication)
-  - [Max-to-DS-out-2A](/Max-to-DS-out-2A)
+  - [Max-to-Arduino_dim2LEDs](/Max-to-Arduino_dim2LEDs)
     - use Max to control the dimming (using PWM) of two LEDs on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
-  - [Max-to-DS-out-3A](/Max-to-DS-out-3A)
+  - [Max-to-Arduino_RGBLED](/Max-to-Arduino_RGBLED)
     - use Max to control the color (using PWM) of the RGB LED on the Digital Sandbox
     - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
     - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
-  - [Max-to-DS-out-servo](/Max-to-DS-out-servo)
+  - [Max-to-Arduino_servo](/Max-to-Arduino_servo)
     - use Max to control a servo motor hooked to the Digital Sandbox (using pulsed digital out - *not* PWM)
     - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment
     - make sure the "charge" switch on the Digital SandBox is in the "off" position
-  - [Max-to-DS-out-piezo](/Max-to-DS-out-piezo)
+  - [Max-to-Arduino_piezo](/Max-to-Arduino_piezo)
     - use Max to control the frequency output of a buzzer hooked to the Digital Sandbox (using PWM)
     - based on Sparkfun's "[14. Opto-Theremin (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/14-opto-theremin-addon)" experiment
 
 
 
-### Sending both directions: Max to DS and simultaneously DS to Max
+### Sending both directions: Max to Arduino and simultaneously Arduino to Max
 
-  - 1D-in-DS-to-Max_Max-to-DS-out-1A
+  - [sending-both-directions_button_motor](/sending-both-directions_button_motor)
     - coming soon ...
     - PWM out
     - based on Sparkfun's "[15. Serial Motoring (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment  
-  - [1A-in-DS-to-Max_Max-to-DS-out-3A](/1A-in-DS-to-Max_Max-to-DS-out-3A)
+  - [sending-both-directions_pot_RGBLED](/sending-both-directions_pot_RGBLED)
     - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control (from Max) the Digital Sandbox's RGB LED using PWM
-
-<hr>
-
-### Wireless communication using XBee modules
-
-  - In short: I have concluded it isn't worth implementing wireless communication using XBees with the Sparkfun Digital SandBox
-  - I used multiple software serial libraries with various combinations of pins 11, 12, 13, and A4 (14) and A5 (15). I got it to work ... but communication often created an incorrect/unstable output and input.
-  - I want these fundamental examples to be very stable, so I will be suggesting hardware serial communication for students starting out ... unfortunately, the Digital Sandbox only has one hardware serial port.
 
 <hr>
 
@@ -110,3 +96,11 @@ Naming convention:<br/>
 - 4-pin header with 3.3V, GND, A4 (SDA) pin, and A5 (SDL) pin
 
 ![photo of the Sparkfun Digital Sandbox](/media/Digital_Sandbox.jpeg)
+
+<hr>
+
+### Wireless communication using XBee modules
+
+  - In short: I have concluded it isn't worth implementing wireless communication using XBees with the Sparkfun Digital SandBox
+  - I used multiple software serial libraries with various combinations of pins 11, 12, 13, and A4 (14) and A5 (15). I got it to work ... but communication often created an incorrect/unstable output and input.
+  - I want these fundamental examples to be very stable, so I will be suggesting hardware serial communication for students starting out ... unfortunately, the Digital Sandbox only has one hardware serial port.
