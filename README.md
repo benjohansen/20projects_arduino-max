@@ -4,7 +4,7 @@ This is a work in progress (beginning Feb.2022).
 
 Provide clear, thoroughly commented code to show how to use serial communication between Max (by [Cycling'74](https://cycling74.com)) and an [Arduino](https://www.arduino.cc) microcontroller.
 
-These examples specifically use Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... but, with a little physical computing and a very small amount of code editing, any Arduino will work.
+These examples only use native Max objects and specifically use Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... but, with a little physical computing and a very small amount of code editing, any Arduino will work.
 
 I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
 
