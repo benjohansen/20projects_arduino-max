@@ -18,56 +18,58 @@ I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion]
 
 # Table of Contents
 
-### Arduino to Max
-  - [Arduino-to-Max_button](/Arduino-to-Max_button)
+### 1 - Arduino to Max (reading Ardiuno input in Max)
+  - [1-01_button](/1-01_button)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
     - nearly the same as Arduino's "[Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial)" built-in example (I use serial.print() rather than serial.println() and added some comments)
     - [Proof from Arduino source code that you can use 1 or HIGH and 0 or LOW](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h#L40-L41)
-  - [Arduino-to-Max_pot](/Arduino-to-Max_pot)
+  - [1-02_potentiometer](/1-02_potentiometer)
     - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
     - based on Sparkfun's "[10. Do the Analog Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" experiment
     - similar to Arduino's "[Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial)" built-in example
-  - [Arduino-to-Max_button-and-pot](/Arduino-to-Max_button-and-pot)
+  - [1-03_button-and-potentiometer](/1-03_button-and-potentiometer)
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
+    - this example shows how to send data for more than one sensor from the Arduino to Max
 
-### Max to Arduino
+### 2 - Max to Arduino (controlling Arduino output from Max)
 
-  - [Max-to-Arduino_LED](/Max-to-Arduino_LED)
+  - [2-01_LED](/2-01_LED)
     - use Max to control one LED attached to the Digital Sandbox
     - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment
     - similar to Arduino's "[Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink)" built-in example
-  - [Max-to-Arduino_5LEDs](/Max-to-Arduino_5LEDs)
+  - [2-02_5LEDs](/2-02_5LEDs)
     - use Max to control the Digital Sandbox's row of five LEDs
+    - this example shows how to send more than one piece of data from Max to the Arduino
     - based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" experiment
-  - [Max-to-Arduino_dimLED](/Max-to-Arduino_dimLED)
+  - [2-03_dimLED](/2-03_dimLED)
     - use Max to control the dimming (using PWM) of an LED on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
     - similar to Arduino's [Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
     - will work for a motor (DS Addon) by changing output pin number to 3 (similar to and simpler than Sparkfun's "[15. Serial Motoring (Addon))](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment, with just one-way communication)
-  - [Max-to-Arduino_dim2LEDs](/Max-to-Arduino_dim2LEDs)
+  - [2-04_dim2LEDs](/2-04_dim2LEDs)
     - use Max to control the dimming (using PWM) of two LEDs on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
-  - [Max-to-Arduino_RGBLED](/Max-to-Arduino_RGBLED)
+  - [2-05_RGBLED](/2-05_RGBLED)
     - use Max to control the color (using PWM) of the RGB LED on the Digital Sandbox
     - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
     - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
-  - [Max-to-Arduino_servo](/Max-to-Arduino_servo)
+  - [2-06_servo](/2-06_servo)
     - use Max to control a servo motor hooked to the Digital Sandbox (using pulsed digital out - *not* PWM)
     - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment
     - make sure the "charge" switch on the Digital SandBox is in the "off" position
-  - [Max-to-Arduino_piezo](/Max-to-Arduino_piezo)
+  - [2-07_piezo](/2-07_piezo)
     - use Max to control the frequency output of a buzzer hooked to the Digital Sandbox (using PWM)
     - based on Sparkfun's "[14. Opto-Theremin (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/14-opto-theremin-addon)" experiment
 
 
 
-### Sending both directions: Max to Arduino and simultaneously Arduino to Max
+### 3 - Both Directions
 
-  - [sending-both-directions_button_motor](/sending-both-directions_button_motor)
+  - [3-01_button-and-motor](/3-01_button-and-motor)
     - coming soon ...
     - PWM out
     - based on Sparkfun's "[15. Serial Motoring (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment  
-  - [sending-both-directions_pot_RGBLED](/sending-both-directions_pot_RGBLED)
+  - [3-02_potentiometer-and-RGBLED](/3-02_potentiometer-and-RGBLED)
     - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control (from Max) the Digital Sandbox's RGB LED using PWM
 
 <hr>
