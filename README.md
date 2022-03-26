@@ -2,9 +2,9 @@ This is a work in progress (beginning Feb.2022).
 
 # Purpose
 
-A pragmatic method for learning serial communication between Max (by [Cycling'74](https://cycling74.com)) and an [Arduino](https://www.arduino.cc) microcontroller by offering 20 projects with clear, thoroughly commented code.
+Completely pull back the curtain and explain how every detail of serial communication between Max (by [Cycling'74](https://cycling74.com)) and an [Arduino](https://www.arduino.cc) microcontroller works. This is a pragmatic method offers 20 projects with clear, thoroughly commented code.
 
-These examples only use native Max objects and specifically use Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... but, with a little physical computing and a very small amount of code editing, any Arduino will work.
+These projects only use native Max objects and were written for Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... **but**, with a little physical computing and a very small amount of code editing, any Arduino will work.
 
 I was especially inspired by Darwin Grosse's "[20 Objects](http://darwingrosse.com/20Objects/index.html)" course and Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
 
