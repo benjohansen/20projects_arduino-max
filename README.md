@@ -6,7 +6,7 @@ A pragmatic method for learning serial communication between Max (by [Cycling'74
 
 These examples only use native Max objects and specifically use Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... but, with a little physical computing and a very small amount of code editing, any Arduino will work.
 
-I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom and Darwin Grosse's "[20 Objects](http://darwingrosse.com/20Objects/index.html)" course.
+I was especially inspired by Darwin Grosse's "[20 Objects](http://darwingrosse.com/20Objects/index.html)" course and Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
 
 # Requirements
 
