@@ -2,11 +2,11 @@ This is a work in progress (beginning Feb.2022).
 
 # Purpose
 
-Provide clear, thoroughly commented code to show how to use serial communication between Max (by [Cycling'74](https://cycling74.com)) and an [Arduino](https://www.arduino.cc) microcontroller.
+A pragmatic method for learning serial communication between Max (by [Cycling'74](https://cycling74.com)) and an [Arduino](https://www.arduino.cc) microcontroller by offering 20 projects with clear, thoroughly commented code.
 
 These examples only use native Max objects and specifically use Sparkfun's Arduino based [Digital Sandbox](https://www.sparkfun.com/products/12651) that has real-world inputs and outputs built into one board ... but, with a little physical computing and a very small amount of code editing, any Arduino will work.
 
-I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom.
+I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion)" written by Jim Lindblom and Darwin Grosse's "[20 Objects](http://darwingrosse.com/20Objects/index.html)" course.
 
 # Requirements
 
@@ -18,59 +18,61 @@ I was especially inspired by the Sparkfun's "[Digital Sandbox Arduino Companion]
 
 # Table of Contents
 
-### 1 - Arduino to Max (reading Ardiuno input in Max)
-  - [1-01_button](/1-01_button)
+### Arduino to Max (reading Ardiuno input in Max)
+  - [01_button](/01_button)
     - send the state of a button (digital pin) from the Digital Sandbox to Max
     - nearly the same as Arduino's "[Digital Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/DigitalReadSerial)" built-in example (I use serial.print() rather than serial.println() and added some comments)
     - [Proof from Arduino source code that you can use 1 or HIGH and 0 or LOW](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h#L40-L41)
-  - [1-02_potentiometer](/1-02_potentiometer)
+  - [02_potentiometer](/02_potentiometer)
     - send the state of a potentiometer (analog pin) from the Digital Sandbox to Max
     - based on Sparkfun's "[10. Do the Analog Slide](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/10-do-the-analog-slide)" experiment
     - similar to Arduino's "[Analogy Read Serial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial)" built-in example
-  - [1-03_button-and-potentiometer](/1-03_button-and-potentiometer)
+  - [03_button-and-potentiometer](/03_button-and-potentiometer)
     - send the states of a button (digital pin) and a potentiometer (analog pin) from the Digital Sandbox to Max
     - this example shows how to send data for more than one sensor from the Arduino to Max
 
-### 2 - Max to Arduino (controlling Arduino output from Max)
+### Max to Arduino (controlling Arduino output from Max)
 
-  - [2-01_LED](/2-01_LED)
+  - [04_LED](/04_LED)
     - use Max to control one LED attached to the Digital Sandbox
     - based on Sparkfun's "[1. Exploring Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/1-exploring-blink)" experiment
     - similar to Arduino's "[Blink](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink)" built-in example
-  - [2-02_5LEDs](/2-02_5LEDs)
+  - [05_5LEDs](/05_5LEDs)
     - use Max to control the Digital Sandbox's row of five LEDs
     - this example shows how to send more than one piece of data from Max to the Arduino
     - based on Sparkfun's "[2. Multi-Blink](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/2-multi-blink)" experiment
-  - [2-03_dimLED](/2-03_dimLED)
+  - [06_dimLED](/06_dimLED)
     - use Max to control the dimming (using PWM) of an LED on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
     - similar to Arduino's [Fade](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade) built-in example
     - will work for a motor (DS Addon) by changing output pin number to 3 (similar to and simpler than Sparkfun's "[15. Serial Motoring (Addon))](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment, with just one-way communication)
-  - [2-04_dim2LEDs](/2-04_dim2LEDs)
+  - [07_dim2LEDs](/07_dim2LEDs)
     - use Max to control the dimming (using PWM) of two LEDs on the Digital Sandbox
     - based on Sparkfun's "[4. Dimming (the Easy Way)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/4-dimming-the-easy-way)" experiment
-  - [2-05_RGBLED](/2-05_RGBLED)
+  - [08_RGBLED](/08_RGBLED)
     - use Max to control the color (using PWM) of the RGB LED on the Digital Sandbox
     - based on Sparkfun's "[5. Color Mixing](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/5-color-mixing)" experiment
     - similar to Arduino's "[Read ASCII String](https://docs.arduino.cc/built-in-examples/communication/ReadASCIIString)" built-in example
-  - [2-06_servo](/2-06_servo)
+  - [09_servo](/09_servo)
     - use Max to control a servo motor hooked to the Digital Sandbox (using pulsed digital out - *not* PWM)
     - based on Sparkfun's "[16. Servo Sweeper (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/16-servo-sweeper-addon)" experiment
     - make sure the "charge" switch on the Digital SandBox is in the "off" position
-  - [2-07_piezo](/2-07_piezo)
+  - [10_piezo](/10_piezo)
     - use Max to control the frequency output of a buzzer hooked to the Digital Sandbox (using PWM)
     - based on Sparkfun's "[14. Opto-Theremin (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/14-opto-theremin-addon)" experiment
 
 
 
-### 3 - Both Directions
+### Both Directions
 
-  - [3-01_button-and-motor](/3-01_button-and-motor)
+  - [11_button-and-motor](/11_button-and-motor)
     - coming soon ...
     - PWM out
     - based on Sparkfun's "[15. Serial Motoring (Addon)](https://learn.sparkfun.com/tutorials/digital-sandbox-arduino-companion/15-serial-motoring-addon)" experiment  
-  - [3-02_potentiometer-and-RGBLED](/3-02_potentiometer-and-RGBLED)
+  - [12_potentiometer-and-RGBLED](/12_potentiometer-and-RGBLED)
     - send the state of the potentiometer from the Digital Sandbox to Max, and simultaneously control (from Max) the Digital Sandbox's RGB LED using PWM
+
+**Projects 13-20 coming soon ...**
 
 <hr>
 
