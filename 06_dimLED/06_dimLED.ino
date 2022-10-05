@@ -1,4 +1,4 @@
-const int ledPin = 3; // pin capable of producing PWM
+const int ledPin = 5; // pin capable of producing PWM
 
 void setup() {
 
